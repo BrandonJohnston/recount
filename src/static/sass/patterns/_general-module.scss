@@ -1,0 +1,67 @@
+/*************************************************************************
+*
+*
+* General Module
+*
+*
+*************************************************************************/
+.general-module {
+
+	&.restricted {
+		margin: 0 auto;
+		width: 50%;
+
+		@media all and (max-width: 800px) {
+			width: 90%;
+		}
+	}
+
+	> .mod-header-wrapper,
+	> .mod-header-restricted {
+		background: $blue;
+		border-bottom: 1px solid $blue-darker;
+		padding: 1.5rem 2rem;
+
+		h2 {
+			color: $white;
+		}
+	}
+
+	> .mod-body-wrapper,
+	> .mod-body-restricted {
+		padding: 1.5rem 2rem;
+	}
+
+	> .mod-footer-wrapper,
+	> .mod-footer-restricted {
+		padding: 1.5rem 2rem;
+
+		&.action-container,
+		&.equal-action-container {
+			padding: 0;
+		}
+
+		&.action-container {
+
+			> .button {
+				display: block;
+			}
+		}
+
+		&.equal-action-container {
+			display: flex;
+
+			> .button {
+				width: 50%;
+			}
+		}
+	}
+
+
+	.mod-header-restricted,
+	.mod-body-restricted,
+	.mod-footer-restricted {
+		margin: 0 auto;
+		width: 50%;
+	}
+}

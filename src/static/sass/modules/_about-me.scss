@@ -1,0 +1,45 @@
+/*************************************************************************
+*
+*
+* About Me
+*
+*
+*************************************************************************/
+.about-me-page {
+
+  .header-link {
+    font-size: 1rem;
+    margin-left: .75rem;
+  }
+
+  > .mod-body-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: flex-start;
+  }
+
+  .primary-content {
+    flex-grow: 2;
+  }
+
+  .secondary-content {
+    flex-grow: 1;
+  }
+
+  .family-member-wrapper {
+    position: relative;
+
+    .tooltip-wrapper {
+      display: none;
+      text-wrap: none;
+      white-space: nowrap;
+    }
+
+    &:hover {
+      .tooltip-wrapper {
+        display: block;
+      }
+    }
+  }
+}
